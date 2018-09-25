@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import FBAudienceNetwork
 import TTFortuneWheel
 
-class ViewController: UIViewController {
 
+
+class ViewController: UIViewController,FBAdViewDelegate {
+    var bannerAdView:FBAdView!
+    
     @IBOutlet weak var spinningWheel: TTFortuneWheel!
     override func viewDidLoad() {
+        loadFacebookbanner()
         super.viewDidLoad()
         let slices = [ CarnivalWheelSlice.init(title: "掃地"),
                        CarnivalWheelSlice.init(title: "倒垃圾"),
@@ -44,6 +49,27 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func loadFacebookbanner() {
+    
+        bannerAdView = FBAdView(placementID:"167275574191325_167282577523958"
+
+, adSize: kFBAdSizeHeight50Banner, rootViewController: self)
+        
+        bannerAdView.frame = CGRect(x: 0, y: view.bounds.height - bannerAdView.frame.size.height, width: bannerAdView.frame.size.width, height: bannerAdView.frame.size.height)
+        bannerAdView.delegate = self
+        bannerAdView.isHidden = true
+        self.view.addSubview(bannerAdView)
+        bannerAdView.loadAd()
+    }
+    
+    func adViewDidLoad(_ adView: FBAdView) {
+        bannerAdView.isHidden = false
+    }
+    
+    func adView(_ adView: FBAdView, didFailWithError error: Error) {
+        print(error)
+    }
+    
     @IBAction func rotateButton(_ sender: Any) {
 
         spinningWheel.startAnimating()
@@ -54,5 +80,8 @@ class ViewController: UIViewController {
             }
         }
     }
+
+
+    
 }
 

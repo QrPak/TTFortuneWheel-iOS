@@ -9,6 +9,7 @@
 import Foundation
 import TTFortuneWheel
 
+
 public class CarnivalWheelSlice: FortuneWheelSliceProtocol {
     
     public enum Style {
@@ -61,5 +62,5 @@ public class CarnivalWheelSlice: FortuneWheelSliceProtocol {
         self.init(title:title)
         self.degree = degree
     }
-    
+
 }

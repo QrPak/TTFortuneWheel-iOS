@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A881C3D0EADB156E803BB1B /* Pods_TTFortuneWheel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EF7E476E8FC6BC301038EE0 /* Pods_TTFortuneWheel.framework */; };
+		512FDAF01C1C9E97CB253172 /* Pods_TTFortuneWheelSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 400CC4493A21F0D1ED1C96B1 /* Pods_TTFortuneWheelSample.framework */; };
+		AE3CF410215A56FC00E31384 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE3CF40F215A56FC00E31384 /* StoreKit.framework */; };
+		AE3CF412215A571F00E31384 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE3CF411215A571F00E31384 /* CoreMotion.framework */; };
+		AE3CF414215A572500E31384 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE3CF413215A572500E31384 /* AdSupport.framework */; };
 		D7043A2D1FE29CBB0064F43D /* TTFortuneWheel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74F36A91FA86966003D0416 /* TTFortuneWheel.framework */; };
 		D7043A2E1FE29D310064F43D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7D7F0451FA88B3B0042B5C6 /* Assets.xcassets */; };
 		D7043A301FE29DAD0064F43D /* TTFortuneWheel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D74F36A91FA86966003D0416 /* TTFortuneWheel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -54,6 +59,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0D90182A5A63BDDCE1FFDCA1 /* Pods-TTFortuneWheel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTFortuneWheel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTFortuneWheel/Pods-TTFortuneWheel.debug.xcconfig"; sourceTree = "<group>"; };
+		400CC4493A21F0D1ED1C96B1 /* Pods_TTFortuneWheelSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTFortuneWheelSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D35B5335D2916AC16956A6D /* Pods-TTFortuneWheelSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTFortuneWheelSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTFortuneWheelSample/Pods-TTFortuneWheelSample.release.xcconfig"; sourceTree = "<group>"; };
+		8EF7E476E8FC6BC301038EE0 /* Pods_TTFortuneWheel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTFortuneWheel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE3CF40E215A4FCD00E31384 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		AE3CF40F215A56FC00E31384 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		AE3CF411215A571F00E31384 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		AE3CF413215A572500E31384 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		C49D3E0029668C37412A61F4 /* Pods-TTFortuneWheelSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTFortuneWheelSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTFortuneWheelSample/Pods-TTFortuneWheelSample.debug.xcconfig"; sourceTree = "<group>"; };
+		C981139F4C33062E8015FE62 /* Pods-TTFortuneWheel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTFortuneWheel.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTFortuneWheel/Pods-TTFortuneWheel.release.xcconfig"; sourceTree = "<group>"; };
 		D70B49571FA86B9100231E07 /* SpinningWheelAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinningWheelAnimator.swift; sourceTree = "<group>"; };
 		D70B49581FA86B9100231E07 /* FortuneWheelLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FortuneWheelLayer.swift; sourceTree = "<group>"; };
 		D70B49591FA86B9100231E07 /* SpinningWheelSlice .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SpinningWheelSlice .swift"; sourceTree = "<group>"; };
@@ -83,6 +98,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE3CF414215A572500E31384 /* AdSupport.framework in Frameworks */,
+				AE3CF412215A571F00E31384 /* CoreMotion.framework in Frameworks */,
+				AE3CF410215A56FC00E31384 /* StoreKit.framework in Frameworks */,
+				4A881C3D0EADB156E803BB1B /* Pods_TTFortuneWheel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,19 +110,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7043A2D1FE29CBB0064F43D /* TTFortuneWheel.framework in Frameworks */,
+				512FDAF01C1C9E97CB253172 /* Pods_TTFortuneWheelSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CF64B3F38C5AD3539A6E619 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D90182A5A63BDDCE1FFDCA1 /* Pods-TTFortuneWheel.debug.xcconfig */,
+				C981139F4C33062E8015FE62 /* Pods-TTFortuneWheel.release.xcconfig */,
+				C49D3E0029668C37412A61F4 /* Pods-TTFortuneWheelSample.debug.xcconfig */,
+				5D35B5335D2916AC16956A6D /* Pods-TTFortuneWheelSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D74F369F1FA86966003D0416 = {
 			isa = PBXGroup;
 			children = (
+				AE3CF40E215A4FCD00E31384 /* BridgingHeader.h */,
 				D74F36AB1FA86966003D0416 /* TTFortuneWheel */,
 				D74F36B91FA86AD7003D0416 /* TTFortuneWheelSample */,
 				D74F36AA1FA86966003D0416 /* Products */,
 				D798CC7C1FA86FA200FE2880 /* Frameworks */,
+				3CF64B3F38C5AD3539A6E619 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,6 +183,11 @@
 		D798CC7C1FA86FA200FE2880 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AE3CF413215A572500E31384 /* AdSupport.framework */,
+				AE3CF411215A571F00E31384 /* CoreMotion.framework */,
+				AE3CF40F215A56FC00E31384 /* StoreKit.framework */,
+				8EF7E476E8FC6BC301038EE0 /* Pods_TTFortuneWheel.framework */,
+				400CC4493A21F0D1ED1C96B1 /* Pods_TTFortuneWheelSample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -191,6 +229,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D74F36B11FA86966003D0416 /* Build configuration list for PBXNativeTarget "TTFortuneWheel" */;
 			buildPhases = (
+				17ED99306D3DF45AE2825FA3 /* [CP] Check Pods Manifest.lock */,
 				D74F36A41FA86966003D0416 /* Sources */,
 				D74F36A51FA86966003D0416 /* Frameworks */,
 				D74F36A61FA86966003D0416 /* Headers */,
@@ -209,6 +248,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D74F36C71FA86AD7003D0416 /* Build configuration list for PBXNativeTarget "TTFortuneWheelSample" */;
 			buildPhases = (
+				D5C10423E6E2048EEE4EF52A /* [CP] Check Pods Manifest.lock */,
 				D74F36B41FA86AD7003D0416 /* Sources */,
 				D74F36B51FA86AD7003D0416 /* Frameworks */,
 				D74F36B61FA86AD7003D0416 /* Resources */,
@@ -288,6 +328,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17ED99306D3DF45AE2825FA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TTFortuneWheel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5C10423E6E2048EEE4EF52A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TTFortuneWheelSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D74F36A41FA86966003D0416 /* Sources */ = {
@@ -458,6 +537,7 @@
 		};
 		D74F36B21FA86966003D0416 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D90182A5A63BDDCE1FFDCA1 /* Pods-TTFortuneWheel.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -475,6 +555,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tw.edu.stust.fixed.fortunewhell;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -483,6 +564,7 @@
 		};
 		D74F36B31FA86966003D0416 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C981139F4C33062E8015FE62 /* Pods-TTFortuneWheel.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -500,6 +582,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tw.edu.stust.fixed.fortunewhell;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -507,6 +590,7 @@
 		};
 		D74F36C81FA86AD7003D0416 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C49D3E0029668C37412A61F4 /* Pods-TTFortuneWheelSample.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -524,6 +608,7 @@
 		};
 		D74F36C91FA86AD7003D0416 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D35B5335D2916AC16956A6D /* Pods-TTFortuneWheelSample.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
