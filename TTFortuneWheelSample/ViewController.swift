@@ -14,14 +14,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var spinningWheel: TTFortuneWheel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let slices = [ CarnivalWheelSlice.init(title: "Roller Coaster"),
-                       CarnivalWheelSlice.init(title: "Try again"),
-                       CarnivalWheelSlice.init(title: "Free\nticket"),
-                       CarnivalWheelSlice.init(title: "Teddy\nbear"),
-                       CarnivalWheelSlice.init(title: "Large popcorn"),
-                       CarnivalWheelSlice.init(title: "Balloon figures"),
-                       CarnivalWheelSlice.init(title: "Ferris Wheel"),
-                       CarnivalWheelSlice.init(title: "Pony\nRide")]
+        let slices = [ CarnivalWheelSlice.init(title: "掃地"),
+                       CarnivalWheelSlice.init(title: "倒垃圾"),
+                       CarnivalWheelSlice.init(title: "擦地板"),
+                       CarnivalWheelSlice.init(title: "做飯"),
+                       CarnivalWheelSlice.init(title: "洗碗"),
+                       CarnivalWheelSlice.init(title: "澆花"),
+                       CarnivalWheelSlice.init(title: "洗馬桶"),
+                       CarnivalWheelSlice.init(title: "再轉一次")]
         spinningWheel.slices = slices
         spinningWheel.equalSlices = true
         spinningWheel.frameStroke.width = 0
@@ -48,8 +48,9 @@ class ViewController: UIViewController {
 
         spinningWheel.startAnimating()
         DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
-            self.spinningWheel.startAnimating(fininshIndex: 5) { (finished) in
-                print(finished)
+         
+            self.spinningWheel.startAnimating(fininshIndex: 6) { (finished) in
+                print("finished")
             }
         }
     }

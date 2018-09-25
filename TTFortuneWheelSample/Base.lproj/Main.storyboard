@@ -37,7 +37,9 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="9" maxX="0.0" maxY="0.0"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="-29" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="開始" backgroundImage="spin"/>
+                                <state key="normal" title="開始" backgroundImage="spin">
+                                    <color key="titleColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="rotateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fiX-hU-lDd"/>
                                 </connections>

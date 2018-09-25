@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:TTFortuneWheel.xcodeproj">
+      location = "self:/Users/patrick/Documents/TTFortuneWheel-iOS/TTFortuneWheel.xcodeproj">
    </FileRef>
 </Workspace>
